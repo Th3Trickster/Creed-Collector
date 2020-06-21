@@ -1,0 +1,9 @@
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\netstandard2.0\CreedCollector.Models.deps.json
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\netstandard2.0\CreedCollector.Models.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\netstandard2.0\CreedCollector.Models.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\netstandard2.0\CreedCollector.Models.csprojAssemblyReference.cache
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\netstandard2.0\CreedCollector.Models.AssemblyInfoInputs.cache
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\netstandard2.0\CreedCollector.Models.AssemblyInfo.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\netstandard2.0\CreedCollector.Models.csproj.CoreCompileInputs.cache
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\netstandard2.0\CreedCollector.Models.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\netstandard2.0\CreedCollector.Models.pdb

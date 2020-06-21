@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EuviX5yfnrIhOocylijOyA2KLgkwWv0GGqBvy40/AEPwUPx6ADKhyzdkGs740Y/8LrXb13TO6z2etM5ycKlIZg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dhowa\\Desktop\\CreedCollector\\CreedCollector.Converters\\CreedCollector.Converters.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhowa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dhowa\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

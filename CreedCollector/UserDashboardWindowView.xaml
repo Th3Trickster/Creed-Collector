@@ -1,0 +1,59 @@
+﻿<Window x:Class="CreedCollector.UserDashboardWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreedCollector"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Dashboard" Height="720" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!-- Column for navigation -->
+            <ColumnDefinition Width="Auto"/>
+            <!-- Content column for user controls Column #1 -->
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Grid for holding navigation buttons -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <!-- Home button row #0 -->
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Button Content="Home"
+                    Width="200"/>
+
+            <Button Content="Games"
+                    Grid.Row="1"
+                    Width="200"/>
+
+            <Button Content="News"
+                    Grid.Row="2"
+                    Width="200"/>
+
+            <Button Content="Find Achievement Hunters"
+                    Grid.Row="3"
+                    Width="200"/>
+
+            <Button Content="Leaderboards"
+                    Grid.Row="4"
+                    Width="200"/>
+
+            <Button Content="Settings"
+                    Grid.Row="5"
+                    Width="200"/>
+
+            <Button Content="Log Out"
+                    Grid.Row="6"
+                    Width="200"/>
+        </Grid>
+    </Grid>
+</Window>
