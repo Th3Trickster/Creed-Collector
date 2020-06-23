@@ -1,7 +1,6 @@
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.exe.config
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.exe
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.pdb
-C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.Views.csprojAssemblyReference.cache
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\LoginWindowView.g.cs
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\App.g.cs
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector_MarkupCompile.cache
@@ -24,3 +23,9 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreateAccountWind
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreateAccountWindowView.baml
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserDashboardWindowView.g.cs
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserDashboardWindowView.baml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.Views.csprojAssemblyReference.cache
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Buttons\ButtonWithImageAndText.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\ButtonTest.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\ButtonTest.baml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Buttons\ButtonWithImageAndText.baml

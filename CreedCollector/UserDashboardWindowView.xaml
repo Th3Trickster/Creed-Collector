@@ -4,21 +4,28 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CreedCollector"
+        xmlns:uc="clr-namespace:CreedCollector.UserControls.Buttons"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Dashboard" Height="720" Width="1280">
     <Grid>
         <Grid.ColumnDefinitions>
             <!-- Column for navigation -->
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="250"/>
             <!-- Content column for user controls Column #1 -->
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
+        <Rectangle Grid.Column="0"
+                   Grid.RowSpan="1000"
+                   Fill="#393836">
+        </Rectangle>
+
         <!-- Grid for holding navigation buttons -->
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <!-- Home button row #0 -->
+                
+                <RowDefinition Height="150"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -28,32 +35,92 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Button Content="Home"
-                    Width="200"/>
+            <!-- Upper Logo and text background fill -->
+            <Rectangle Grid.Row="0"
+                       Fill="#292929"/>
+            
+            <!-- User icon and text -->
+            <StackPanel Grid.Row="0"
+                        Margin="0 20 0 0"
+                        HorizontalAlignment="Center">
+                <Image Source="Assets/DefaultUserLoginIcon.png"
+                       Width="60"
+                       Height="60"/>
+                <Label Content="Welcome Placeholder"
+                       Foreground="White"
+                       FontSize="16"
+                       Margin="0 10 0 0"/>
+            </StackPanel>
 
-            <Button Content="Games"
-                    Grid.Row="1"
-                    Width="200"/>
+            <!-- Home Button -->
+            <uc:ButtonWithImageAndText Grid.Row="1"
+                                       ButtonIcon="/Assets/Home.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="Home"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
 
-            <Button Content="News"
-                    Grid.Row="2"
-                    Width="200"/>
+            <!-- Games Button -->
+            <uc:ButtonWithImageAndText Grid.Row="2"
+                                       ButtonIcon="/Assets/Games.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="Games"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
 
-            <Button Content="Find Achievement Hunters"
-                    Grid.Row="3"
-                    Width="200"/>
+            <!-- News Button -->
+            <uc:ButtonWithImageAndText Grid.Row="3"
+                                       ButtonIcon="/Assets/News.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="News"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
 
-            <Button Content="Leaderboards"
-                    Grid.Row="4"
-                    Width="200"/>
+            <!-- Find Achievement Hunters Button -->
+            <uc:ButtonWithImageAndText Grid.Row="4"
+                                       ButtonIcon="/Assets/Trophy.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="Find Achievement Hunters"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
 
-            <Button Content="Settings"
-                    Grid.Row="5"
-                    Width="200"/>
+            <!-- Leaderboards Button -->
+            <uc:ButtonWithImageAndText Grid.Row="5"
+                                       ButtonIcon="/Assets/Find.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="Leaderboards"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
 
-            <Button Content="Log Out"
-                    Grid.Row="6"
-                    Width="200"/>
+            <!-- Settings Button -->
+            <uc:ButtonWithImageAndText Grid.Row="6"
+                                       ButtonIcon="/Assets/Settings.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="Settings"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
+
+            <!-- Log Out Button -->
+            <uc:ButtonWithImageAndText Grid.Row="7"
+                                       ButtonIcon="/Assets/LogOut.png"
+                                       ButtonIconWidth="30"
+                                       ButtonIconHeight="30"
+                                       ButtonText="Log Out"
+                                       ButtonWidth="250"
+                                       ButtonHeight="50"
+                                       ButtonTextColor="White"/>
         </Grid>
     </Grid>
 </Window>

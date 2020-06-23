@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CreedCollector.UserControls.Buttons
+namespace CreedCollector
 {
     /// <summary>
-    /// Interaction logic for ButtonWithTextAndImage.xaml
+    /// Interaction logic for ButtonTest.xaml
     /// </summary>
-    public partial class ButtonWithTextAndImage : UserControl
+    public partial class ButtonTest : Window
     {
-        public ButtonWithTextAndImage()
+        public ButtonTest()
         {
             InitializeComponent();
         }
