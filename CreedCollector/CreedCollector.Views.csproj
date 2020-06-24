@@ -79,6 +79,7 @@
     <Compile Include="ButtonTest.xaml.cs">
       <DependentUpon>ButtonTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Todo.cs" />
     <Compile Include="UserControls\Buttons\ButtonWithImageAndText.xaml.cs">
       <DependentUpon>ButtonWithImageAndText.xaml</DependentUpon>
     </Compile>

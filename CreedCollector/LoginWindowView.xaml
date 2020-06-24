@@ -4,11 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CreedCollector"
+        xmlns:vm="clr-namespace:CreedCollector.ViewModels;assembly=CreedCollector.ViewModels"
+        xmlns:prop="clr-namespace:CreedCollector.AttachedProperties"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Login" Height="600" Width="500">
-    <Grid>
+    <Window.Resources>
+        <vm:LoginWindowViewModel x:Key="vm"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource vm}">
         <!-- Background image for grid -->
         <Grid.Background>
             <ImageBrush ImageSource="Assets/LoginWindowBackground.jpg"
@@ -56,7 +61,8 @@
                  FontSize="16"
                  Margin="0 0 0 20"
                  Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
-                 materialDesign:HintAssist.Hint="Username"/>
+                 materialDesign:HintAssist.Hint="Username"
+                 Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}"/>
         
         <!-- Password Textbox -->
         <PasswordBox Grid.Row="3"
@@ -64,7 +70,9 @@
                      FontSize="16"
                      Margin="0 0 0 15"
                      Style="{DynamicResource MaterialDesignFloatingHintPasswordBox}"
-                     materialDesign:HintAssist.Hint="Password"/>
+                     materialDesign:HintAssist.Hint="Password"
+                     prop:PasswordBoxAttachedProperties.EncryptedPassword="{Binding PasswordSecureString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     PasswordChanged="PasswordBox_PasswordChanged"/>
 
         <!-- Grid for Remember me/checkbox & forgot password -->
         <Grid Grid.Row="4"
@@ -98,7 +106,8 @@
         <Button Content="Login"
                 Grid.Row="5"
                 Width="300"
-                Margin="0 25 0 0"/>
+                Margin="0 25 0 0"
+                Command="{Binding LoginCommand}"/>
 
         <!-- Need an account label -->
         <Label Content="Need an account?"

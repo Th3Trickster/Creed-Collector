@@ -21,7 +21,9 @@ namespace CreedCollector.ViewModels.Commands
             if (!string.IsNullOrWhiteSpace(CreateAccountWindowViewModel.FirstName) &&
                 !string.IsNullOrWhiteSpace(CreateAccountWindowViewModel.LastName) &&
                 !string.IsNullOrWhiteSpace(CreateAccountWindowViewModel.Email) &&
-                !string.IsNullOrWhiteSpace(CreateAccountWindowViewModel.UserName))
+                !string.IsNullOrWhiteSpace(CreateAccountWindowViewModel.UserName) &&
+                CreateAccountWindowViewModel.PasswordSecureString != null &&
+                CreateAccountWindowViewModel.PasswordSecureString.Length > 0)
             {
                 return true;
             }

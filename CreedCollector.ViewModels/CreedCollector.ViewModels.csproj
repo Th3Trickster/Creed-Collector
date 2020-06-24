@@ -54,9 +54,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\CreateUserCommand.cs" />
+    <Compile Include="Commands\LoginCommand.cs" />
     <Compile Include="CreateAccountWindowViewModel.cs" />
     <Compile Include="Hashing\PasswordHashing.cs" />
     <Compile Include="Hashing\SecureStringManipulation.cs" />
+    <Compile Include="LoginWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

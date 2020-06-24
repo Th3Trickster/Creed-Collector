@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CreedCollector.AttachedProperties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,13 @@ namespace CreedCollector
         public LoginWindowView()
         {
             InitializeComponent();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            PasswordBox pBox = sender as PasswordBox;
+
+            PasswordBoxAttachedProperties.SetEncryptedPassword(pBox, pBox.SecurePassword);
         }
     }
 }

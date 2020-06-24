@@ -100,30 +100,40 @@ namespace CreedCollector.ViewModels
         {
             using (CreedCollectorEntities ctx = new CreedCollectorEntities())
             {
-                ctx.Users.Add(new User
+                if (ctx.Users.Any(o => o.UserName == UserName))
                 {
-                    FirstName = FirstName,
-                    LastName = LastName,
-                    Email = Email,
-                    UserName = UserName,
-                    Password = PasswordHashing.CalculateHash(SecureStringManipulation.ConvertSecureStringToByteArray(PasswordSecureString))
-                });
-
-                try
-                {
-                    ctx.SaveChanges();
+                    MessageBox.Show("User already exists"); // Needs converted to MVVM
                 }
-                catch (DbEntityValidationException ex)
+                else if (ctx.Users.Any(o => o.Email == Email))
                 {
-                    foreach (var entityValidationErrors in ex.EntityValidationErrors)
+                    MessageBox.Show("Email already exists"); // Needs converted to MVVM
+                }
+                else
+                {
+                    ctx.Users.Add(new User
                     {
-                        foreach (var validationError in entityValidationErrors.ValidationErrors)
+                        FirstName = FirstName,
+                        LastName = LastName,
+                        Email = Email,
+                        UserName = UserName,
+                        Password = PasswordHashing.CalculateHash(SecureStringManipulation.ConvertSecureStringToByteArray(PasswordSecureString))
+                    });
+
+                    try
+                    {
+                        ctx.SaveChanges();
+                    }
+                    catch (DbEntityValidationException ex)
+                    {
+                        foreach (var entityValidationErrors in ex.EntityValidationErrors)
                         {
-                            Debug.Write("Property: " + validationError.PropertyName + " Error: " + validationError.ErrorMessage);
+                            foreach (var validationError in entityValidationErrors.ValidationErrors)
+                            {
+                                Debug.Write("Property: " + validationError.PropertyName + " Error: " + validationError.ErrorMessage);
+                            }
                         }
                     }
                 }
-                MessageBox.Show("Login Details Saved!");
             }
         }
 
