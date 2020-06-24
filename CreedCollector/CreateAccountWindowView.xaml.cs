@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CreedCollector.AttachedProperties;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +24,13 @@ namespace CreedCollector
         public CreateAccountWindowView()
         {
             InitializeComponent();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            PasswordBox pBox = sender as PasswordBox;
+
+            PasswordBoxAttachedProperties.SetEncryptedPassword(pBox, pBox.SecurePassword);
         }
     }
 }

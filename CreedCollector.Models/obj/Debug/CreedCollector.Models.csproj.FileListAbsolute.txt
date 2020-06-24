@@ -1,0 +1,12 @@
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\CreedCollector.Models.dll.config
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\CreedCollector.Models.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\CreedCollector.Models.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\EntityFramework.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\EntityFramework.xml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csprojAssemblyReference.cache
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csproj.CoreCompileInputs.cache
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csproj.CopyComplete
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.pdb
