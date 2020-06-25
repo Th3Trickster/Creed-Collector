@@ -122,5 +122,9 @@
                                        ButtonHeight="50"
                                        ButtonTextColor="White"/>
         </Grid>
+
+        <Frame Grid.Column="1"
+               Source="UserControls/Views/HomeView.xaml"
+               Width="1030"/>
     </Grid>
 </Window>

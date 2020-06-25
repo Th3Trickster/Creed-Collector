@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="CreedCollector.UserControls.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CreedCollector.UserControls.Views"
+             mc:Ignorable="d" 
+             Background="White"
+             d:DesignHeight="720" d:DesignWidth="1030">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!-- Top Header row #0 -->
+            <RowDefinition Height="70"/>
+            <!-- Grid with quick stats row #1 -->
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0"
+                   Grid.RowSpan="1"
+                   Fill="#393836"/>
+
+        <Rectangle Grid.Row="1"
+                   Grid.RowSpan="1"
+                   Fill="#F4F7FA"/>
+
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center">
+            <Label Content="Home"
+                   FontSize="24"
+                   Foreground="White"
+                   HorizontalAlignment="Center"/>
+            <Label Content="Your stats at a glance"
+                   FontSize="16"
+                   Foreground="White"
+                   HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <!-- This grid is held inside the main grid and is used for the top header information-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <!-- Xbox One Achievements Row #0 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- Playstation 4 Trophies Row #1 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- Steam Achievements Row #2 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- Xbox 360 Achievements Row #3 -->
+                <ColumnDefinition Width="1*"/>
+                <!-- Playstation 3 Trophies Row #4 -->
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Vertical">
+                <Label Content="Xbox One"
+                       HorizontalAlignment="Center"
+                       FontSize="16"/>
+                <Label Content="Achievements"
+                       HorizontalAlignment="Center"
+                       FontSize="16"/>
+                <Label Content="0/665"
+                       HorizontalAlignment="Center"
+                       FontSize="22"
+                       FontWeight="Bold"/>
+            </StackPanel>
+            <Label Content="Playstation 4 Trophies"
+                   HorizontalAlignment="Center"
+                   Grid.Column="1"/>
+            <Label Content="Steam Achievements"
+                   HorizontalAlignment="Center"
+                   Grid.Column="2"/>
+            <Label Content="Xbox 360 Achievements"
+                   HorizontalAlignment="Center"
+                   Grid.Column="3"/>
+            <Label Content="Playstation 3 Trophies"
+                   HorizontalAlignment="Center"
+                   Grid.Column="4"/>
+        </Grid>
+    </Grid>
+</UserControl>

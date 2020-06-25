@@ -39,3 +39,7 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.Vi
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.ViewModels.dll.config
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.Models.pdb
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CreedCollector.Models.dll.config
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Views\HomeView.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Views\HomeView.baml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Cards\BasicTextCardWithIcon.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Cards\BasicTextCardWithIcon.baml

@@ -9,7 +9,7 @@
         xmlns:vm="clr-namespace:CreedCollector.ViewModels;assembly=CreedCollector.ViewModels"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Create an Account" Height="600" Width="500">
+        Title="Create an Account" Height="650" Width="500">
     <Window.Resources>
         <vm:CreateAccountWindowViewModel x:Key="vm"/>
     </Window.Resources>
@@ -32,6 +32,12 @@
             <!-- Username textbox row #4 -->
             <RowDefinition Height="Auto"/>
             <!-- Password passwordbox row #5 -->
+            <RowDefinition Height="Auto"/>
+            <!-- Xbox Live Gamertag row #6 -->
+            <RowDefinition Height="Auto"/>
+            <!-- Steam Username row #7 -->
+            <RowDefinition Height="Auto"/>
+            <!-- Playstation Network Id row #8 -->
             <RowDefinition Height="Auto"/>
             <!-- Create Account Button row #6 -->
             <RowDefinition Height="Auto"/>
@@ -84,14 +90,41 @@
         <PasswordBox Grid.Row="5"
                      Width="300"
                      FontSize="16"
-                     Margin="0 10 0 65"
+                     Margin="0 10 0 0"
                      Style="{DynamicResource MaterialDesignFloatingHintPasswordBox}"
                      materialDesign:HintAssist.Hint="Password"
                      prop:PasswordBoxAttachedProperties.EncryptedPassword="{Binding PasswordSecureString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      PasswordChanged="PasswordBox_PasswordChanged"/>
 
+        <!-- Xbox Live Gamertag -->
+        <TextBox Grid.Row="6"
+                 Width="300"
+                 FontSize="16"
+                 Margin="0 10 0 0"
+                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                 materialDesign:HintAssist.Hint="Xbox Live Gamertag"
+                 Text="{Binding XboxLiveGamertag, UpdateSourceTrigger=PropertyChanged}"/>
+        
+        <!-- Steam Name -->
+        <TextBox Grid.Row="7"
+                 Width="300"
+                 FontSize="16"
+                 Margin="0 10 0 0"
+                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                 materialDesign:HintAssist.Hint="Steam Username"
+                 Text="{Binding SteamUsername, UpdateSourceTrigger=PropertyChanged}"/>
+        
+        <!-- PSN Name -->
+        <TextBox Grid.Row="8"
+                 Width="300"
+                 FontSize="16"
+                 Margin="0 10 0 15"
+                 Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                 materialDesign:HintAssist.Hint="PSN Name"
+                 Text="{Binding PsnName, UpdateSourceTrigger=PropertyChanged}"/>
+
         <!-- Create Account Button -->
-        <Button Grid.Row="6"
+        <Button Grid.Row="9"
                 Content="Create Account"
                 Width="300"
                 Height="50"

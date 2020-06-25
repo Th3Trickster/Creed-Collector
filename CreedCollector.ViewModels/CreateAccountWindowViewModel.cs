@@ -22,8 +22,41 @@ namespace CreedCollector.ViewModels
         private string email;
         private string username;
         private SecureString password;
+        private string xboxLiveGamertag;
+        private string steamUsername;
+        private string psnName;
 
         public CreateUserCommand CreateUserCommand { get; set; }
+
+        public string XboxLiveGamertag
+        {
+            get { return xboxLiveGamertag; }
+            set
+            {
+                xboxLiveGamertag = value;
+                RaisePropertyChanged("XboxLiveGamertag");
+            }
+        }
+
+        public string SteamUsername
+        {
+            get { return steamUsername; }
+            set
+            {
+                steamUsername = value;
+                RaisePropertyChanged("SteamUsername");
+            }
+        }
+
+        public string PsnName
+        {
+            get { return psnName; }
+            set
+            {
+                psnName = value;
+                RaisePropertyChanged("PsnName");
+            }
+        }
 
         public string FirstName
         {
@@ -116,7 +149,10 @@ namespace CreedCollector.ViewModels
                         LastName = LastName,
                         Email = Email,
                         UserName = UserName,
-                        Password = PasswordHashing.CalculateHash(SecureStringManipulation.ConvertSecureStringToByteArray(PasswordSecureString))
+                        Password = PasswordHashing.CalculateHash(SecureStringManipulation.ConvertSecureStringToByteArray(PasswordSecureString)),
+                        XboxLiveGamertag = XboxLiveGamertag,
+                        PlaystationNetworkId = PsnName,
+                        SteamId = SteamUsername
                     });
 
                     try

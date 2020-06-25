@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\App.xaml
-5784610819
+7-992361615
 
-12-31556442
+14508493355
 19-1834253355
-ButtonTest.xaml;CreateAccountWindowView.xaml;LoginWindowView.xaml;UserControls\Buttons\ButtonWithImageAndText.xaml;UserDashboardWindowView.xaml;
+ButtonTest.xaml;CreateAccountWindowView.xaml;LoginWindowView.xaml;UserControls\Buttons\ButtonWithImageAndText.xaml;UserControls\Cards\BasicTextCardWithIcon.xaml;UserControls\Views\HomeView.xaml;UserDashboardWindowView.xaml;
 
 True
 
