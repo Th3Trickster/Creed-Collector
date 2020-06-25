@@ -39,3 +39,14 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.Vi
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.Views.csproj.CopyComplete
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.exe
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\CommonServiceLocator.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\bin\Debug\GalaSoft.MvvmLight.Platform.xml

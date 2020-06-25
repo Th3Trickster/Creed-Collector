@@ -13,3 +13,14 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\obj\Debug\CreedC
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\obj\Debug\CreedCollector.ViewModels.csproj.CopyComplete
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\obj\Debug\CreedCollector.ViewModels.dll
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\obj\Debug\CreedCollector.ViewModels.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\CommonServiceLocator.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.ViewModels\bin\Debug\GalaSoft.MvvmLight.Platform.xml

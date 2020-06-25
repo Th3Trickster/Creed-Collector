@@ -2,6 +2,8 @@
 using CreedCollector.ViewModels.Commands;
 using CreedCollector.ViewModels.Hashing;
 using CreedCollector.ViewModels.LoggedInProperties;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,14 +59,18 @@ namespace CreedCollector.ViewModels
             }
         }
 
+        public RelayCommand ShowUserDashboardWindowView { get; private set; }
+
         public LoginWindowViewModel()
         {
             LoginCommand = new LoginCommand(this);
+            ShowUserDashboardWindowView = new RelayCommand(ShowUserDashboardWindowViewCommandExecute);
         }
 
         /* This method will check if the user exists in the DB and also check the password. Password is salted and hashed.
          * After user has been authenticated with the DB that user's information which is need for the application is stored
-         * in static properties in a seperate class, the method which stores the properties is SetUserInformation. */
+         * in static properties in a seperate class, the method which stores the properties is SetUserInformation. Then
+         * the message for opening the user dashboard is sent to the UserDashboardWindowView. */
         public void Login()
         {
             using (CreedCollectorEntities ctx = new CreedCollectorEntities())
@@ -87,6 +93,7 @@ namespace CreedCollector.ViewModels
                     return;
                 }
                 SetUserInformation();
+                ShowUserDashboardWindowViewCommandExecute();
             }
         }
 
@@ -105,6 +112,14 @@ namespace CreedCollector.ViewModels
             }
         }
 
+        /* This method is used for sending a message to the UserDashboardWindowView which will
+         * open once the user is authenticated in the DB.*/
+        public void ShowUserDashboardWindowViewCommandExecute()
+        {
+            Messenger.Default.Send(new NotificationMessage("ShowUserDashboardWindowView"));
+        }
+
+        /* Used for MVVM purposes */
         protected void RaisePropertyChanged(string propertyName)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
