@@ -1,9 +1,11 @@
 ﻿using CreedCollector.Models;
 using CreedCollector.ViewModels.Commands;
 using CreedCollector.ViewModels.Hashing;
+using CreedCollector.ViewModels.LoggedInProperties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Security;
 using System.Text;
@@ -60,6 +62,9 @@ namespace CreedCollector.ViewModels
             LoginCommand = new LoginCommand(this);
         }
 
+        /* This method will check if the user exists in the DB and also check the password. Password is salted and hashed.
+         * After user has been authenticated with the DB that user's information which is need for the application is stored
+         * in static properties in a seperate class, the method which stores the properties is SetUserInformation. */
         public void Login()
         {
             using (CreedCollectorEntities ctx = new CreedCollectorEntities())
@@ -81,6 +86,22 @@ namespace CreedCollector.ViewModels
                     MessageBox.Show("Incorrect Password Entered.");
                     return;
                 }
+                SetUserInformation();
+            }
+        }
+
+        // This method will set the User information in static methods which will be used throughout the application.
+        private void SetUserInformation()
+        {
+            using (CreedCollectorEntities ctx = new CreedCollectorEntities())
+            {
+                User user = ctx.Users
+                               .Where(User => User.UserName == this.UserName)
+                               .FirstOrDefault();
+                UserInformation.FirstName = user.FirstName;
+                UserInformation.XboxLiveGamertag = user.XboxLiveGamertag;
+                UserInformation.SteamUsername = user.SteamId;
+                UserInformation.PsnName = user.PlaystationNetworkId;
             }
         }
 
