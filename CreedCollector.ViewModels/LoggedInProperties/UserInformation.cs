@@ -13,5 +13,6 @@ namespace CreedCollector.ViewModels.LoggedInProperties
         public static string XboxLiveGamertag { get; set; }
         public static string SteamUsername { get; set; }
         public static string PsnName { get; set; }
+        public static string Xuid { get; set; }
     }
 }

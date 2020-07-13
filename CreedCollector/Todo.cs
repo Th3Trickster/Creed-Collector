@@ -21,5 +21,7 @@ namespace CreedCollector
         // TODO: Open Create Account window when hyperlink in LoginWindowViewModel is clicked
 
         // TODO: Open UserDashboardWindowView when user has logged in and close the Login screen
+
+        // TODO: Add a circle progress bar to login window while waiting to retrieve xuid.
     }
 }

@@ -1,4 +1,5 @@
-﻿using CreedCollector.Models;
+﻿using CreedCollector.Helpers;
+using CreedCollector.Models;
 using CreedCollector.ViewModels.Commands;
 using CreedCollector.ViewModels.Hashing;
 using CreedCollector.ViewModels.LoggedInProperties;
@@ -93,7 +94,7 @@ namespace CreedCollector.ViewModels
                     return;
                 }
                 SetUserInformation();
-                ShowUserDashboardWindowViewCommandExecute();
+                GetUserXuid();
             }
         }
 
@@ -109,6 +110,19 @@ namespace CreedCollector.ViewModels
                 UserInformation.XboxLiveGamertag = user.XboxLiveGamertag;
                 UserInformation.SteamUsername = user.SteamId;
                 UserInformation.PsnName = user.PlaystationNetworkId;
+            }
+        }
+
+        /* This method will get the users Xuid for making API calls for Xbox. You need the Xbox Gamertag in order to make an
+         * Api call to retrieve the XUID. This will then be stored in the UserInformation class for later use through out the application. */
+        private async void GetUserXuid()
+        {
+            string xuid = await XApiHelper.GetXboxXuid(UserInformation.XboxLiveGamertag);
+
+            if (xuid != null)
+            {
+                UserInformation.Xuid = xuid;
+                ShowUserDashboardWindowViewCommandExecute();
             }
         }
 

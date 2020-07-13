@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CreedCollector"
         xmlns:uc="clr-namespace:CreedCollector.UserControls.Buttons"
+        xmlns:ucv="clr-namespace:CreedCollector.UserControls.Views"
+        xmlns:vm="clr-namespace:CreedCollector.ViewModel"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Dashboard" Height="720" Width="1280">
@@ -123,8 +125,7 @@
                                        ButtonTextColor="White"/>
         </Grid>
 
-        <Frame Grid.Column="1"
-               Source="UserControls/Views/HomeView.xaml"
-               Width="1030"/>
+        <ucv:HomeView Grid.Column="1"
+                      Width="1030"/>
     </Grid>
 </Window>

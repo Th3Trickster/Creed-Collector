@@ -3,16 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:CreedCollector.ViewModels;assembly=CreedCollector.ViewModels"
              xmlns:local="clr-namespace:CreedCollector.UserControls.Views"
+             xmlns:uc="clr-namespace:CreedCollector.UserControls"
              mc:Ignorable="d" 
              Background="White"
              d:DesignHeight="720" d:DesignWidth="1030">
+    <UserControl.DataContext>
+        <vm:HomeViewModel/>
+    </UserControl.DataContext>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
     <Grid>
         <Grid.RowDefinitions>
             <!-- Top Header row #0 -->
             <RowDefinition Height="70"/>
             <!-- Grid with quick stats row #1 -->
             <RowDefinition Height="150"/>
+            <!-- Grid for game cards row #2 -->
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Rectangle Grid.Row="0"
@@ -57,10 +65,22 @@
                 <Label Content="Achievements"
                        HorizontalAlignment="Center"
                        FontSize="16"/>
-                <Label Content="0/665"
-                       HorizontalAlignment="Center"
-                       FontSize="22"
-                       FontWeight="Bold"/>
+                <!-- 665 Total Achievements -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                    <TextBlock Text="{Binding UnlockedXboxOneAchievements.Count, UpdateSourceTrigger=PropertyChanged}"
+                               HorizontalAlignment="Center"
+                               FontSize="22"
+                               FontWeight="Bold"/>
+                    <TextBlock Text="/"
+                               HorizontalAlignment="Center"
+                               FontSize="22"
+                               FontWeight="Bold"/>
+                    <TextBlock Text="{Binding XboxGameAchievements.Count, UpdateSourceTrigger=PropertyChanged}"
+                               HorizontalAlignment="Center"
+                               FontSize="22"
+                               FontWeight="Bold"/>
+                </StackPanel>
             </StackPanel>
             <Label Content="Playstation 4 Trophies"
                    HorizontalAlignment="Center"
@@ -75,5 +95,166 @@
                    HorizontalAlignment="Center"
                    Grid.Column="4"/>
         </Grid>
+        
+        <!-- This grid holds the game cards with snapshot information -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Card for Ezio Collection -->
+            <uc:Card Grid.Column="0"
+                     CardHeader="Assassin's Creed The Ezio Collection"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/EzioCollection.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="25 15 0 0"/>
+            
+            <!-- Card for Assassins Creed III -->
+            <uc:Card Grid.Column="1"
+                     CardHeader="Assassin's Creed III Remastered"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedIIIRemastered.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="0 15 25 0"/>
+            
+            <!-- Card for Black Flag -->
+            <uc:Card Grid.Column="0"
+                     Grid.Row="1"
+                     CardHeader="Assassin's Creed IV: Black Flag"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedIVBlackFlag.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="25 15 0 0"/>
+            
+            <!-- Card for Rogue Xbox One -->
+            <uc:Card Grid.Column="1"
+                     Grid.Row="1"
+                     CardHeader="Assassin's Creed Rogue Remastered"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedRogueRemastered.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="0 15 25 0"/>
+            
+            <!-- Card for Unity -->
+            <uc:Card Grid.Column="0"
+                     Grid.Row="2"
+                     CardHeader="Assassin's Creed Unity"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedUnity.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="25 15 0 0"/>
+            
+            <!-- Card for Chronicles China -->
+            <uc:Card Grid.Column="1"
+                     Grid.Row="2"
+                     CardHeader="Assassin's Creed Chronicles: China"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedChroniclesChina.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="0 15 25 0"/>
+            
+            <!-- Card for Chronicles India -->
+            <uc:Card Grid.Column="0"
+                     Grid.Row="3"
+                     CardHeader="Assassin's Creed Chronicles: India"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedChroniclesIndia.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="25 15 0 0"/>
+            
+            <!-- Card for Chronicles Russia -->
+            <uc:Card Grid.Column="1"
+                     Grid.Row="3"
+                     CardHeader="Assassin's Creed Chronicles: Russia"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedChroniclesRussia.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="0 15 25 0"/>
+            
+            <!-- Card for Syndicate -->
+            <uc:Card Grid.Column="0"
+                     Grid.Row="4"
+                     CardHeader="Assassin's Creed Syndicate"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedSyndicate.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="25 15 0 0"/>
+            
+            <!-- Card for Origins -->
+            <uc:Card Grid.Column="1"
+                     Grid.Row="4"
+                     CardHeader="Assassin's Creed Origins"
+                     CardFooter="Xbox One"
+                     CardUnlockedAchievement="{Binding UnlockedXboxOneAchievements.Count, UpdateSourceTrigger=PropertyChanged}"
+                     CardTotalAchievements="{Binding XboxGameAchievements.Count, UpdateSourceTrigger=PropertyChanged}"
+                     CardImage="/Assets/AssassinsCreedOrigins.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="0 15 25 0"/>
+            
+            <!-- Card for Odyssey -->
+            <uc:Card Grid.Column="0"
+                     Grid.Row="5"
+                     CardHeader="Assassin's Creed Odyssey"
+                     CardFooter="Xbox One"
+                     CardImage="/Assets/AssassinsCreedOdyssey.jpg"
+                     CardImageWidth="86"
+                     CardImageHeight="110"
+                     CardButtonIcon="ArrowRight"
+                     CardImageBackground="#107C10"
+                     CardLeadingTextIcon="/Assets/XboxLogo.png"
+                     Margin="25 15 0 0"/>
+            </Grid>
     </Grid>
+    </ScrollViewer>
 </UserControl>

@@ -73,6 +73,7 @@
     <Compile Include="CreateAccountWindowViewModel.cs" />
     <Compile Include="Hashing\PasswordHashing.cs" />
     <Compile Include="Hashing\SecureStringManipulation.cs" />
+    <Compile Include="HomeViewModel.cs" />
     <Compile Include="LoggedInProperties\UserInformation.cs" />
     <Compile Include="LoginWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +81,10 @@
     <Compile Include="ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CreedCollector.Helpers\CreedCollector.Helpers.csproj">
+      <Project>{144CF4C0-DE53-4192-9C73-F9B130884203}</Project>
+      <Name>CreedCollector.Helpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CreedCollector.Models\CreedCollector.Models.csproj">
       <Project>{E9499F04-715E-4620-AB01-82DAF3BCD7C3}</Project>
       <Name>CreedCollector.Models</Name>

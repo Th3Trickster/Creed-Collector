@@ -53,6 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Xbox\MediaAsset.cs" />
+    <Compile Include="API\Xbox\Progression.cs" />
+    <Compile Include="API\Xbox\Rarity.cs" />
+    <Compile Include="API\Xbox\Requirement.cs" />
+    <Compile Include="API\Xbox\Reward.cs" />
+    <Compile Include="API\Xbox\TitleAssociation.cs" />
+    <Compile Include="API\Xbox\XboxGameAchievements.cs" />
+    <Compile Include="API\Xbox\XboxOneAchievement.cs" />
     <Compile Include="CreedCollector.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,6 +93,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="API\README.txt" />
     <Content Include="CreedCollector.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CreedCollector.edmx</DependentUpon>
