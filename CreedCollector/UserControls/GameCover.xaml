@@ -59,7 +59,7 @@
                 </StackPanel>
 
                 <TextBlock Text="{Binding GameTitle, ElementName=Covers}"
-                           FontSize="18"
+                           FontSize="17"
                            Grid.Row="2"
                            Foreground="Black"
                            HorizontalAlignment="Center"

@@ -23,5 +23,7 @@ namespace CreedCollector
         // TODO: Open UserDashboardWindowView when user has logged in and close the Login screen
 
         // TODO: Add a circle progress bar to login window while waiting to retrieve xuid.
+
+        // TODO: When there are only 2 game platform logos they're off center in the GamesView (The GameCover needs fixed somehow).
     }
 }

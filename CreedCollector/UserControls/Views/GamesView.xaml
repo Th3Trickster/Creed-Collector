@@ -37,23 +37,75 @@
                 <!-- Columns for holding games -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
                 <Grid.RowDefinitions>
                     <!-- Odyssey, Origins, Syndicate row #0 -->
                     <RowDefinition Height="Auto"/>
+                    <!-- Unity, Rogue Remastered, Black Flag row #1 -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Placeholder -->
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                
+
                 <uc:GameCover CoverImage="/Assets/AssassinsCreedOdysseyGameCover.png"
-                          PlatformLogoOne="/Assets/XboxLogo.png"
-                          PlatformLogoTwo="/Assets/PlaystationLogo.png"
-                          PlatformLogoThree="/Assets/SteamLogo.png"
-                          GameTitle="Assassin's Creed Odyssey"
-                          CardButtonIcon="ArrowRight"/>
-                
-                
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              PlatformLogoThree="/Assets/SteamLogo.png"
+                              GameTitle="Assassin's Creed Odyssey"
+                              CardButtonIcon="ArrowRight"
+                              Margin="30 0 0 0"/>
+
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedOriginsGameCover.png"
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              PlatformLogoThree="/Assets/SteamLogo.png"
+                              GameTitle="Assassin's Creed Origins"
+                              CardButtonIcon="ArrowRight"
+                              Grid.Column="1"/>
+
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedSyndicateGameCover.png"
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              GameTitle="Assassin's Creed Syndicate"
+                              CardButtonIcon="ArrowRight"
+                              Grid.Column="2"
+                              Margin="0 0 30 0"/>
+
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedUnityGameCover.png"
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              GameTitle="Assassin's Creed Unity"
+                              CardButtonIcon="ArrowRight"
+                              Grid.Row="1"
+                              Margin="30 0 0 0"/>
+
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedRogueRemasteredGameCover.png"
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              GameTitle="Assassin's Creed Rogue Remastered"
+                              CardButtonIcon="ArrowRight"
+                              Grid.Row="1"
+                              Grid.Column="1"/>
+
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedTheEzioCollectionGameCover.png"
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              GameTitle="Assassin's Creed The Ezio Collection"
+                              CardButtonIcon="ArrowRight"
+                              Grid.Row="1"
+                              Grid.Column="2"
+                              Margin="0 0 30 0"/>
+
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedIIIRemasteredGameCover.png"
+                              PlatformLogoOne="/Assets/XboxLogo.png"
+                              PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                              GameTitle="Assassin's Creed III Remastered"
+                              CardButtonIcon="ArrowRight"
+                              Grid.Row="2"
+                              Margin="30 0 0 0"/>
             </Grid>
         </Grid>
     </ScrollViewer>
