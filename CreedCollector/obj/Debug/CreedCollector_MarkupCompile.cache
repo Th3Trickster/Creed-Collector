@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\App.xaml
-6154103201
+8547088401
 
-141689152741
+16-1995531912
 1283239398
-CreateAccountWindowView.xaml;LoginWindowView.xaml;UserControls\Buttons\ButtonWithImageAndText.xaml;UserControls\Card.xaml;UserControls\Views\HomeView.xaml;UserDashboardWindowView.xaml;
+CreateAccountWindowView.xaml;LoginWindowView.xaml;UserControls\Buttons\ButtonWithImageAndText.xaml;UserControls\Card.xaml;UserControls\GameCover.xaml;UserControls\Views\GamesView.xaml;UserControls\Views\HomeView.xaml;UserDashboardWindowView.xaml;
 
 False
 

@@ -125,7 +125,10 @@
                                        ButtonTextColor="White"/>
         </Grid>
 
-        <ucv:HomeView Grid.Column="1"
-                      Width="1030"/>
+        <!--<ucv:HomeView Grid.Column="1"
+                      Width="1030"/>-->
+
+        <ucv:GamesView Grid.Column="1"
+                       Width="1030"/>
     </Grid>
 </Window>

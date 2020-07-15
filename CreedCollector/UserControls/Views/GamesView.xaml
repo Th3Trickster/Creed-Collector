@@ -4,29 +4,57 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CreedCollector.UserControls.Views"
+             xmlns:uc="clr-namespace:CreedCollector.UserControls"
              mc:Ignorable="d" 
              Background="#F4F7FA"
              d:DesignHeight="720" d:DesignWidth="1030">
-    <Grid>
-        <Grid.RowDefinitions>
-            <!-- Top Header row #0 -->
-            <RowDefinition Height="70"/>
-        </Grid.RowDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- Top Header row #0 -->
+                <RowDefinition Height="70"/>
+                <!-- Grid for holding games row #1 -->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <Rectangle Grid.Row="0"
+            <Rectangle Grid.Row="0"
                    Grid.RowSpan="1"
                    Fill="#393836"/>
 
-        <StackPanel Orientation="Vertical"
+            <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center">
-            <Label Content="Games"
+                <Label Content="Games"
                    FontSize="24"
                    Foreground="White"
                    HorizontalAlignment="Center"/>
-            <Label Content="List Of All Games"
+                <Label Content="List Of All Games"
                    FontSize="16"
                    Foreground="White"
                    HorizontalAlignment="Center"/>
-        </StackPanel>
-    </Grid>
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <!-- Columns for holding games -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <!-- Odyssey, Origins, Syndicate row #0 -->
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <uc:GameCover CoverImage="/Assets/AssassinsCreedOdysseyGameCover.png"
+                          PlatformLogoOne="/Assets/XboxLogo.png"
+                          PlatformLogoTwo="/Assets/PlaystationLogo.png"
+                          PlatformLogoThree="/Assets/SteamLogo.png"
+                          GameTitle="Assassin's Creed Odyssey"
+                          CardButtonIcon="ArrowRight"/>
+                
+                
+            </Grid>
+        </Grid>
+    </ScrollViewer>
 </UserControl>

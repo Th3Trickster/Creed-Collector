@@ -56,3 +56,7 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.ex
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\CreedCollector.pdb
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Card.g.cs
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Card.baml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\GameCover.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Views\GamesView.g.cs
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\GameCover.baml
+C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\UserControls\Views\GamesView.baml

@@ -9,4 +9,3 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedColle
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csproj.CopyComplete
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.dll
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.pdb
-C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csprojAssemblyReference.cache
