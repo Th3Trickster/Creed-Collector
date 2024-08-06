@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\obj\Debug\
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector\obj\Debug\
 CreedCollector
 none
 false
 DEBUG;TRACE
-C:\Users\dhowa\Desktop\CreedCollector\CreedCollector\App.xaml
-8547088401
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector\App.xaml
+81627312528
 
-16-1995531912
-1283239398
+16-1653735295
+128162420340
 CreateAccountWindowView.xaml;LoginWindowView.xaml;UserControls\Buttons\ButtonWithImageAndText.xaml;UserControls\Card.xaml;UserControls\GameCover.xaml;UserControls\Views\GamesView.xaml;UserControls\Views\HomeView.xaml;UserDashboardWindowView.xaml;
 
 False

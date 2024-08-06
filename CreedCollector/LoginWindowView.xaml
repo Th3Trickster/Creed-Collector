@@ -120,7 +120,7 @@
         <TextBlock FontSize="16"
                    Grid.Row="7"
                    HorizontalAlignment="Center">
-            <Hyperlink>
+            <Hyperlink Command="{Binding ShowCreateAccountWindowView}">
                 Create One
             </Hyperlink>
         </TextBlock>

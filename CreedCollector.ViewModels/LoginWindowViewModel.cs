@@ -62,10 +62,13 @@ namespace CreedCollector.ViewModels
 
         public RelayCommand ShowUserDashboardWindowView { get; private set; }
 
+        public RelayCommand ShowCreateAccountWindowView { get; private set; }
+
         public LoginWindowViewModel()
         {
             LoginCommand = new LoginCommand(this);
             ShowUserDashboardWindowView = new RelayCommand(ShowUserDashboardWindowViewCommandExecute);
+            ShowCreateAccountWindowView = new RelayCommand(ShowCreateAccountWindowViewExecute);
         }
 
         /* This method will check if the user exists in the DB and also check the password. Password is salted and hashed.
@@ -131,6 +134,13 @@ namespace CreedCollector.ViewModels
         public void ShowUserDashboardWindowViewCommandExecute()
         {
             Messenger.Default.Send(new NotificationMessage("ShowUserDashboardWindowView"));
+        }
+
+        /* This method is used for sending a message to the CreateAccountWindowView
+         * which will open the view when the hyperlink is clicked*/
+        public void ShowCreateAccountWindowViewExecute()
+        {
+            Messenger.Default.Send(new NotificationMessage("ShowCreateAccountWindowView"));
         }
 
         /* Used for MVVM purposes */

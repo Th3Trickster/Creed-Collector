@@ -9,3 +9,15 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedColle
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csproj.CopyComplete
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.dll
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Models\obj\Debug\CreedCollector.Models.pdb
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\CreedCollector.Models.dll.config
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\CreedCollector.Models.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\CreedCollector.Models.pdb
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\EntityFramework.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\EntityFramework.xml
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csproj.AssemblyReference.cache
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\obj\Debug\CreedCollector.Models.csproj.CoreCompileInputs.cache
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\obj\Debug\CreedCol.474D7783.Up2Date
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\obj\Debug\CreedCollector.Models.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Models\obj\Debug\CreedCollector.Models.pdb

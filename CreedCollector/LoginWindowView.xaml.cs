@@ -1,4 +1,5 @@
 ﻿using CreedCollector.AttachedProperties;
+using CreedCollector.ViewModels.Interfaces;
 using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,13 @@ namespace CreedCollector
                 var window = Window.GetWindow(this);
                 window.Close();
                 view.Show();
+            }
+            else if (msg.Notification == "ShowCreateAccountWindowView")
+            {
+                CreateAccountWindowView createAccountWindowView = new CreateAccountWindowView();
+                var window = Window.GetWindow(this);
+                window.Close();
+                createAccountWindowView.Show();
             }
         }
 

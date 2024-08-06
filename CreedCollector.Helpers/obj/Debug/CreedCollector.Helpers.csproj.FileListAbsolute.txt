@@ -12,3 +12,17 @@ C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Helpers\bin\Debug\EntityFra
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.csproj.CopyComplete
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.dll
 C:\Users\dhowa\Desktop\CreedCollector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.pdb
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\CreedCollector.Helpers.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\CreedCollector.Helpers.pdb
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\CreedCollector.Models.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\CreedCollector.Models.pdb
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\CreedCollector.Models.dll.config
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\bin\Debug\EntityFramework.xml
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.csproj.AssemblyReference.cache
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\obj\Debug\CreedCol.B7D0A6CE.Up2Date
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.dll
+C:\Users\dhowa\Source\Repos\Creed-Collector\CreedCollector.Helpers\obj\Debug\CreedCollector.Helpers.pdb
