@@ -1,5 +1,4 @@
 ﻿using CreedCollector.AttachedProperties;
-using CreedCollector.ViewModels.Interfaces;
 using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
