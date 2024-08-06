@@ -12,6 +12,8 @@ namespace CreedCollector
 
         // TODO: Create custom border around application windows and add custom close and minimize buttons.
 
+        // TODO: Add tooltips to buttons.
+
         // TODO: Convert MessageBox in CreateAccountWindowViewModel to MVVM
 
         // TODO: Implement Remember me function in LoginWindowView
