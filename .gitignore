@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CreedCollector/.vs
+/CreedCollector.Converters/.vs
+/CreedCollector.Helpers/.vs
+/CreedCollector.Models/.vs
+/CreedCollector.ViewModels/.vs
