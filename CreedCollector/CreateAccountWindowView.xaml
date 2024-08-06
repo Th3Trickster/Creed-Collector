@@ -43,6 +43,18 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <!-- Back button -->
+        <StackPanel Orientation="Horizontal">
+            <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                    Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"
+                    ToolTip="MaterialDesignFloatingActionMiniDarkButton"
+                    Margin="10 0 0 0">
+                <materialDesign:PackIcon Width="32"
+                                         Height="32"
+                                         Kind="ArrowBack"/>
+            </Button>
+        </StackPanel>
+
         <!-- Create an account label -->
         <Label Content="Create an Account"
                FontSize="22"

@@ -8,6 +8,10 @@ namespace CreedCollector
 {
     class Todo
     {
+        // TODO: Implement back button functionality in CreateAccountWindow. Back button closes window and opens previous window.
+
+        // TODO: Create custom border around application windows and add custom close and minimize buttons.
+
         // TODO: Convert MessageBox in CreateAccountWindowViewModel to MVVM
 
         // TODO: Implement Remember me function in LoginWindowView
