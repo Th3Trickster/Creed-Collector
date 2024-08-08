@@ -8,7 +8,7 @@ namespace CreedCollector
 {
     class Todo
     {
-        // TODO: Implement back button functionality in CreateAccountWindow. Back button closes window and opens previous window.
+        // TODO: Back button functionality working but after first close and reopen of the CreateAccountWindow the LoginWindowView will no longer close and opens numerous instances.
 
         // TODO: Create custom border around application windows and add custom close and minimize buttons.
 

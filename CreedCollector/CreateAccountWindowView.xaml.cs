@@ -1,4 +1,5 @@
 ﻿using CreedCollector.AttachedProperties;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -24,6 +25,7 @@ namespace CreedCollector
         public CreateAccountWindowView()
         {
             InitializeComponent();
+            Messenger.Default.Register<NotificationMessage>(this, NotificationMessageReceived);
         }
 
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
@@ -31,6 +33,17 @@ namespace CreedCollector
             PasswordBox pBox = sender as PasswordBox;
 
             PasswordBoxAttachedProperties.SetEncryptedPassword(pBox, pBox.SecurePassword);
+        }
+
+        private void NotificationMessageReceived(NotificationMessage msg)
+        {
+            if (msg.Notification == "ShowLoginWindowView")
+            {
+                LoginWindowView loginWindowView = new LoginWindowView();
+                var window = Window.GetWindow(this);
+                window.Close();
+                loginWindowView.Show();
+            }
         }
     }
 }

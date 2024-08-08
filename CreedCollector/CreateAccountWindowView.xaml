@@ -48,7 +48,8 @@
             <Button IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                     Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"
                     ToolTip="MaterialDesignFloatingActionMiniDarkButton"
-                    Margin="10 0 0 0">
+                    Margin="10 0 0 0"
+                    Command="{Binding ShowLoginWindowView}">
                 <materialDesign:PackIcon Width="32"
                                          Height="32"
                                          Kind="ArrowBack"/>

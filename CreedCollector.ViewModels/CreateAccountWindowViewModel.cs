@@ -1,6 +1,8 @@
 ﻿using CreedCollector.Models;
 using CreedCollector.ViewModels.Commands;
 using CreedCollector.ViewModels.Hashing;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -98,6 +100,8 @@ namespace CreedCollector.ViewModels
             }
         }
 
+        public RelayCommand ShowLoginWindowView { get; private set; }
+
         public SecureString PasswordSecureString
         {
             get { return password; }
@@ -127,6 +131,7 @@ namespace CreedCollector.ViewModels
         {
             CreateUserCommand = new CreateUserCommand(this);
             user = new User();
+            ShowLoginWindowView = new RelayCommand(ShowLoginWindowViewCommandExecute);
         }
 
         public void CreateUser()
@@ -171,6 +176,11 @@ namespace CreedCollector.ViewModels
                     }
                 }
             }
+        }
+
+        public void ShowLoginWindowViewCommandExecute()
+        {
+            Messenger.Default.Send(new NotificationMessage("ShowLoginWindowView"));
         }
 
         protected void RaisePropertyChanged(string propertyName)
